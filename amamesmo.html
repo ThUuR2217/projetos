@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você ama seu namorado?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .yes {
+            background-color: #4CAF50;
+        }
+        .no {
+            background-color: #f44336;
+        }
+        .heart {
+            font-size: 24px;
+            color: #e91e63;
+        }
+        #no-button {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você ama seu namorado?</h1>
+    <button class="button yes" onclick="showHeart()">Sim</button>
+    <button id="no-button" class="button no" onclick="moveButton()">Não</button>
+    <div id="heart" class="heart"></div>
+
+    <script>
+        function showHeart() {
+            document.getElementById('heart').innerHTML = '❤️ Tinhâmu, Feliz 2 meses para nós';
+            document.getElementById('no-button').style.display = 'none';
+        }
+
+        function moveButton() {
+            var button = document.getElementById('no-button');
+            var bodyWidth = document.body.clientWidth;
+            var bodyHeight = document.body.clientHeight;
+            var buttonWidth = button.clientWidth;
+            var buttonHeight = button.clientHeight;
+            
+            var newLeft = Math.random() * (bodyWidth - buttonWidth);
+            var newTop = Math.random() * (bodyHeight - buttonHeight);
+            
+            button.style.left = newLeft + 'px';
+            button.style.top = newTop + 'px';
+        }
+    </script>
+</body>
+</html>
