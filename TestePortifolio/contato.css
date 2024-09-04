@@ -1,0 +1,43 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    list-style: none;
+    padding: 6px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    padding: 0px 50px;
+}
+
+.container1 {
+    background-color: orange;
+    height: 150px;
+    width: 1000px;
+    
+}
+.container2 {
+    background-color:green;
+    height: 150px;
+    width: 1000px;
+}
+.container3 {
+    background-color: red;
+    height: 150px;
+    width: 1000px;
+}
+.container4 {
+    background-color: purple;
+    height: 150px;
+    width: 1000px;
+}
