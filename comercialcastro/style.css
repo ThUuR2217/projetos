@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'barlow';
+    src: url(C:\Users\User\Documents\vsCode\comercialcastro\fontes);
+}
+@font-face {
+    font-family: 'source' ;
+    src: url(C:\Users\User\Documents\vsCode\comercialcastro\fontes);
+}
+@media screen and (max-width: 1000px){
+    #zap picture img {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px){
+    footer picture img {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px){
+    #donuz picture img {
+        display: none;
+    }
+}
+
+body{
+    padding: 0;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    flex-direction: row;
+    padding: 5px;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.377);
+    margin: 0px;
+    position: fixed;
+    justify-content: center;
+}
+.logo img{
+    width: 100px;
+    padding: 6px;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+nav ul a{
+    padding-right: 35px;  
+    font-size: 17px;
+    font-family: 'barlow';
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 10px;
+    animation-duration: 1s;
+}
+    
+
+.contatos a img{
+    display: flex;
+    width: 30px;
+    background-color: #de660b;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: row;
+    margin-left: 240px;
+    margin-top: 5px
+}
+#home{
+    text-align: center;
+    background-color: #f5813d;
+    padding: 10px;
+}
+#home h1{
+    font-size: 17px;
+    padding-top: 160px;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-bottom: 0px;
+}
+#home img{
+    width: 400px;
+
+}
+
+#sobre{
+    background-color: black;
+    padding: 10px;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+    
+}
+    
+#sobre p{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-indent: 20px;
+    font-size: 1.5em;
+    max-width: 900px;
+    text-align: justify;
+    margin: auto;
+    padding: 10px 0px;
+}
+#sobre h1{
+    font-size: 48px;
+}
+#sobre hr{
+    margin: auto;
+    max-width: 900px;
+    justify-content:  center ;
+}
+#zap{
+    background-color: #f5813d;
+    display: flex;
+    flex-direction: column 2;
+    padding: 30px;
+    padding-right: 50px;
+    justify-content: space-around;
+}
+#zap picture img{
+    display: 1000px;
+    width: 400px;
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 150px;
+}
+#zap h1{
+    text-align: center;
+    font-size: 48px;
+}
+
+#zap p {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-indent: 20px;
+    font-size: 1.5em;
+    max-width: 900px;
+    text-align: justify;
+    margin: auto;
+    padding: 10px ;
+}
+#zap hr{
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: black;
+    width: 100%;
+    display: flex ;
+}
+#butao{
+    display: flex;
+    margin-bottom: 45px;
+    justify-content: center;
+}
+
+#butao a{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 6px;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black;
+    transition: 600ms;
+}
+#butao a:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 #24d163;
+}  
+
+#donuz{
+    background-color: #014073;
+    color: white;
+    display: flex;
+    flex-direction: column 2;
+    padding: 30px;
+    padding-right: 50px;
+    justify-content: space-around;
+}
+#donuz picture img{
+    width: 400px;
+    margin-right: 130px;
+    margin-top: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#donuz div picture img :hover{
+    background-image: url(imagens/laran.png);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+#donuz h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+#donuz p {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-indent: 20px;
+    font-size: 1.5em;
+    max-width: 900px;
+    text-align: justify;
+    margin: auto;
+    padding: 10px ;
+}
+#donuz hr{
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: black;
+    width: 100%;
+    display: flex ;
+}
+footer{
+    padding: 10px;
+    display: flex;
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    justify-content: center;
+}
+footer picture img{
+    display: flex;
+    width: 120px;
+    padding: 15px;
+}
+footer p{
+    padding-top: 15px;
+    margin-left: 110px;
+}
