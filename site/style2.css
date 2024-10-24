@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    padding: 5px;
+    background-color: #080403ff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+nav li {
+    padding: 10px; 
+    list-style: none; /
+}
+
+nav img {
+    width: 40px;
+    max-width: 100%;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+#img img { 
+    width: 100%; 
+    max-width: 700px; 
+}
+
+.iphone16 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    columns: 2;
+}
+
+.iphone16 h2, 
+.iphone16 p {
+    margin-left: 10%; 
+    margin-right: 10%; 
+    text-align: justify;
+}
+
+#i16 {
+    padding-top: 50px;
+    font-size: large;
+}
+
+#final  li {
+    margin-top: 50px;
+    display: flex;
+    list-style-type: none;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-around;
+  }    
+  #final a{
+    text-decoration: none;
+    color: white;
+  }
+  #final li a:hover{
+    color: gray;
+  }
+
+
+
+@media (max-width: 768px) {
+    .iphone16{
+        columns: 1;
+    }
+    nav {
+        align-items: center; 
+
+    nav li {
+        padding: 10px 0
+    }}}
