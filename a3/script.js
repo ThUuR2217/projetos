@@ -2,14 +2,14 @@ function checkPassword() {
     const password = document.getElementById('password').value;
     const result = document.getElementById('result');
 
-    // Critérios de força da senha
+    
     const lengthCriteria = password.length >= 8;
     const uppercaseCriteria = /[A-Z]/.test(password);
     const lowercaseCriteria = /[a-z]/.test(password);
     const numberCriteria = /\d/.test(password);
     const specialCharCriteria = /[!@#$%^&*(),.?":{}|<>]/.test(password);
 
-    // Contagem de critérios atendidos
+    
     const criteriaMet = [
         lengthCriteria,
         uppercaseCriteria,
@@ -18,7 +18,7 @@ function checkPassword() {
         specialCharCriteria
     ].filter(Boolean).length;
 
-    // Classificação da força da senha
+    
     let strength = '';
     let color = '';
 
@@ -46,7 +46,7 @@ function checkPassword() {
     result.style.color = color;
 }
 
-// Função para mostrar ou ocultar a senha
+
 document.getElementById('togglePassword').addEventListener('click', function () {
     const passwordInput = document.getElementById('password');
     const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
@@ -54,7 +54,6 @@ document.getElementById('togglePassword').addEventListener('click', function () 
     this.textContent = type === 'password' ? 'Mostrar' : 'Ocultar';
 });
 
-// Adicionando o evento para o Enter
 document.getElementById('password').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         checkPassword();
