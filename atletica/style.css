@@ -1,0 +1,123 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+}
+header{
+    columns: 2;
+}
+picture img{
+    width: 600px;
+    max-width: 100%;
+}
+
+#p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 60px;
+    padding-top: 240px;
+}
+main{
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+
+}
+main h1{
+    padding-top: 25px;
+    text-align: center;
+}
+hr{
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.org img{
+    display:inline-block;
+    border-radius: 20px;
+    max-width: 100%;
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+.insta{
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5px ;
+    background-color: blue;
+    transition: 10ms;
+}
+.insta:hover{
+    transition: 10ms;
+    padding: 2px;
+    background-color: rgb(24, 24, 72);
+}
+#org1{
+    padding-top: 40px;
+    justify-content: space-around;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    header{
+        columns: 1;
+    }
+    #p{
+        padding-top: 0px;
+        margin-right: 0px;
+    }
+    .org{
+        padding: 10px;
+    }
+    #org1{
+        font-size: 10px;
+}
+}
+#org2{
+    padding-top: 40px;
+    justify-content: space-around;
+    display: flex;
+}
+#org3{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: space-around;
+    display: flex;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 55);
+}
+.foto img{
+    padding-top: 15px;
+    margin: 0px;
+    width: 80px;
+    cursor: pointer;
+}
+.foto1{
+    margin: 0px;
+    width: 80px;
+    cursor: pointer;
+}
+#foo a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#foo a:hover{
+    color: white;
+}
+#foo{
+    margin-top: 35px;
+}
+
